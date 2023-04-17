@@ -1,0 +1,228 @@
+/*
+    Light Gray - #F8F9FA
+    Border Gray - #9AA0A6
+    Background Gray - #F2F2F2
+    Blue - #1A73E8
+    Shadow Green - #6E9A9F
+    Dark Blue (used as img background) - #1A73E855
+    Black - #202124
+    Google Red - rbg(255, 88, 88)
+    Google Yellow - rgb(255, 255, 135)
+    Google Green - rgb(7, 210, 7)
+    Google Blue - rgb(3, 3, 172)
+*/
+
+/* Using FLEXBOX to header so that bth images and h1 are in a horizontal layout */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    border: 2px dotted pink;
+}
+
+/* --------------------------------- HEADER styling starts------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #F8F9FA;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    height: 20vh;
+}
+
+header h1{
+    /* background: #1A73E8; */
+    color: #F8F9FA;
+    padding: 15px 20px;
+    border: 2px solid #F8F9FA;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #6e9a9f;
+    font-family: 'Vidaloka', serif;
+    font-size: 2rem;
+    letter-spacing: 1.1rem;
+    height: 80%;
+}
+
+.small_img{
+    width: auto;
+    height: 100%;
+}
+
+.medium_img{
+    width: 50%;
+}
+
+.large_img{
+    width: 80%;
+}
+
+img{
+    background: #1A73E855;
+    padding: 5px;
+    border: 2px solid #F8F9FA;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #6e9a9f;
+}
+
+/* --------------------------------- HEADER styling ends------------------------- */
+
+/* --------------------------------- MAIN Section styling starts------------------------- */
+
+#search{
+    text-align: center; 
+    margin: 0px auto;
+    /* height: 60vh; */
+}
+
+#search input{
+    width: 500px;
+    height: 20px;
+    border: 1px solid #9aa0a6;
+    border-radius: 25px;
+    padding: 20px 20px;
+    margin: 10px auto;
+    font-size: 1.05rem;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 1.1px;
+}
+
+.btn{
+    width: fit-content;
+    margin: 10px 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #F8F9FA ;
+    color: #202124;
+    font-size: 1.05rem;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 1.1px;
+}
+
+.btn:hover{
+    width: fit-content;
+    margin: 10px 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #1A73E8 ;
+    color: #F8F9FA;
+    font-size: 1.05rem;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 1.1px; 
+    cursor: pointer; 
+}
+
+
+/* News Styling*/
+#news_header{
+   text-align: center;
+   background: #F8F9FA;
+   color: #202124;
+   width: 50%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+   border-radius: 25px;
+   padding: 5px;
+   font-size: 1.5rem;
+   font-family: 'Vidaloka', serif;
+   letter-spacing: 1.5px;
+}
+
+#d{
+    color: #4285F4;
+}
+
+#e{
+    color: #DB4437;
+}
+#v{
+    color: #F4B400;
+}
+#o1{
+    color: #0F9D58;
+}
+#o2{
+    color: #4285F4;
+}
+#g{
+    color: #DB4437;
+}
+#l{
+    color: #0F9D58;
+}
+
+#news{
+    display: grid;
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-columns: repeat(3, 30%);
+    gap: 10px;
+    justify-content: center;
+    /* align-content: center; */
+    /* background: blueviolet; */
+}
+
+.news_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    background: #F8F9FA;
+    color: #202124;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    border: 1px solid #9aa0a6;
+}
+
+.news_item h3{
+    margin-bottom: 15px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+/* --------------------------------- MAIN Section styling ends------------------------- */
+
+/* --------------------------------- FOOTER styling starts------------------------- */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+
+footer p{
+    background: #1A73E8;
+    color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #6e9a9f;
+    font-family: 'Vidaloka', serif;
+    letter-spacing: 1.6px;
+}
+
+
+footer a{
+    text-decoration: none;
+    border: 2px solid #F8F9FA;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer a:hover{
+    box-shadow: 5px 5px 15px #6e9a9f;
+}
+/* --------------------------------- FOOTER styling ends------------------------- */

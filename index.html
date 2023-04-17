@@ -1,0 +1,94 @@
+<!--
+    In this project you are to create your own 'search engine' ala Google.
+    You are required to have the following:
+        A thematic header that mimics Google
+        A search section that mimics Google
+        A news section that has 'thumbnails' for a minimum of 6 news articles
+        A footer linking to other search engines.  
+    
+    You must use a combination of grid and flexbox layouts to design your page layout.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devoogle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="small_img" src="search.png" alt="A Search Glass">
+        <h1><span id="d">D</span>
+            <span id="e">e</span>
+            <span id="v">v</span>
+            <span id="o1">o</span>
+            <span id="o2">o</span>
+            <span id="g">g</span>
+            <span id="l">l</span>
+            <span id="e">e</span>
+        </h1>
+        <img class="small_img" src="search.png" alt="A Search Glass">
+    </header>
+
+    <main>
+        <section id="search">
+            <form action="https://www.google.com/search">
+                <input id="search_item" name="q" type="text">
+
+                <div id="btn_wrapper">
+                    <button class="btn">Devoogle Search!</button>
+                    <button class="btn">I'm Feeling Very Lucky!</button>
+                </div>
+            </form>
+        </section>
+
+        <h2 id="news_header">Today's News</h2>
+        <section id="news">
+            <div class="news_item">
+                <h3>Baseball Attendance At All Time Highs</h3>
+                <a class="btn" href="https://www.google.com/"><img class="large_img" src="news_baseball.jpg" alt=""></a>
+            </div>
+            <div class="news_item">
+                <h3>Doctors Find Cure</h3>
+                <a class="btn" href="https://www.google.com/"><img class="large_img" src="news_doctor.jpg" alt=""></a>
+            </div>
+            <div class="news_item">
+                <h3>Fresh Food In Town</h3>
+                <a class="btn" href="https://www.google.com/"><img class="large_img" src="news_food.jpg" alt=""></a>
+            </div>
+            <div class="news_item">
+                <h3>Popcorn or Candy? The Debate is On</h3>
+                <a class="btn" href="https://www.google.com/"><img class="large_img" src="news_movies.jpg" alt=""></a>
+            </div>
+            <div class="news_item">
+                <h3>UN Leaders Meet at Summit</h3>
+                <a class="btn" href="https://www.google.com/"><img class="large_img" src="news_politics.jpg" alt=""></a>
+            </div>
+            <div class="news_item">
+                <h3>How Productive Are You Really</h3>
+                <a class="btn" href="https://www.google.com/"><img class="large_img" src="news_tech.jpg" alt=""></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://au.yahoo.com/">Yahoo!</a>
+        <p>Powered by Google. Refined by ME!</p>
+        <a href="https://www.bing.com/">Bing</a>
+        <a href="https://www.msn.com/en-au">MSN</a>
+    </footer>
+</body>
+
+</html>
